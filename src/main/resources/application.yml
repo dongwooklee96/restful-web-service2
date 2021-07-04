@@ -1,0 +1,22 @@
+server:
+  port: 8088
+
+logging:
+  level:
+    org.springframework: DEBUG
+
+spring:
+  messages:
+    basename: messages
+  security:
+    user:
+      name: username
+      password: password
+  livereload:
+    enabled: true
+
+management:
+  endpoints:
+    web:
+      exposure:
+        include: "*"
